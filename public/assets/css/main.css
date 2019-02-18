@@ -1,0 +1,358 @@
+
+.form-group {}
+
+#head.secondary { 
+	height:100px;
+	min-height: 100px;
+	padding-top:0px; 
+}
+	
+#head .lead { 
+	font-family:"Open sans", Helvetica, Arial; 
+	font-size:44px; 
+	margin-bottom:40px; margin-top:45px; color:#d30153; 
+	line-height:1.5em; 
+} 
+#head .tagline { 
+	color:#d301515e;
+	(255,255,255,0.75);
+	margin-bottom:25px; 
+}
+#head .tagline a { 
+	color:#fff; 
+} 
+
+#head .btn { 
+	margin-bottom:30px;
+}
+
+#head .btn-default { 
+	text-shadow: none; 
+	background:transparent;
+	color:#d30151b9; 
+	-webkit-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5); 
+	-moz-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5); 
+	box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5);
+	background: transparent; 
+}
+
+#head .btn-default:hover,
+#head .btn-default:focus { 
+	color:rgba(255,255,255,.8); 
+	-webkit-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8); 
+	-moz-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8); 
+	box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8); 
+	background: transparent; 
+}
+#head .btn-default:active, 
+#head .btn-default.active { 
+	color:#fff; -webkit-box-shadow:inset 0px 0px 0px 3px #fff; 
+	-moz-box-shadow:inset 0px 0px 0px 3px #fff;
+	box-shadow:inset 0px 0px 0px 3px #fff; 
+	background: transparent; }
+
+.nomAssurance {
+	font-family:"Open sans", Helvetica, Arial; 
+	fontsize : 40px; color:white;
+	line-height:1em;
+}
+
+
+@media (max-width: 767px) {
+#head { 
+	min-height:420px; padding-top:160px; 
+}
+#head .lead { 
+	font-size: 34px; 
+}
+}
+
+/* Animation voiture*/
+#voiture {
+	position: relative;
+	left: -950px;
+}
+
+
+
+/* Radio button*/
+.form-check-inline{
+	display:inline;
+	margin-top:20px; 
+}
+
+/* ComboBox*/
+.comboBox{
+	padding:0;
+	margin:0;
+}
+
+/* Range */
+.slidecontainer {
+	margin-top:20px; 
+	width: 100%; /* Width of the outside container */
+}
+  
+/* The slider itself */
+.slider {
+	-webkit-appearance: none;  /* Override default CSS styles */
+	appearance: none;
+	width: 100%; /* Full-width */
+	height: 25px; /* Specified height */
+	outline: none; /* Remove outline */
+	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
+	transition: opacity .2s;
+}
+  
+/* Mouse-over effects */
+.slider:hover {
+	opacity: 1; /* Fully shown on mouse-over */
+}
+  
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	width: 25px; /* Set a specific slider handle width */
+	height: 25px; /* Slider handle height */
+	background:  #d30151c5; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+}
+  
+.slider::-moz-range-thumb {
+	width: 20px; /* Set a specific slider handle width */
+	height: 20px; /* Slider handle height */
+	background:  #d30151c5; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+}
+
+
+
+
+/* Picto Tchat */
+
+.zoom {
+	width: 60px;
+	height: 60px;
+	margin-left:10px;
+	padding-top: 10px;
+}
+
+
+.image img {
+	/* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+	-webkit-transition: all 1s ease; /* Safari et Chrome */
+	-moz-transition: all 1s ease; /* Firefox */
+	-ms-transition: all 1s ease; /* Internet Explorer 9 */
+	-o-transition: all 1s ease; /* Opera */
+	transition: all 1s ease;
+}
+
+
+.image:hover img {
+	/* L'image est grossie de 25% */
+	-webkit-transform:scale(1.25); /* Safari et Chrome */
+	-moz-transform:scale(1.25); /* Firefox */
+	-ms-transform:scale(1.25); /* Internet Explorer 9 */
+	-o-transform:scale(1.25); /* Opera */
+	transform:scale(1.25);
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+			
+
+/* The popup chat - hidden by default */
+.chat-popup {
+display: none;
+position: fixed;
+bottom: 0;
+right: 15px;
+border: 3px solid #f1f1f1;
+z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+max-width: 300px;
+padding: 10px;
+background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
+resize: none;
+min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+background-color: #ddd;
+outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+background-color: #d30151;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+background-color: #d30153;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
+
+
+
+
+
+/* Highlights (in jumbotron in most cases) */
+.highlight { margin-top:40px; }
+.h-caption { text-align: center; } 
+.h-caption i { display:block; font-size: 54px; color:#382526; margin-bottom:36px; }
+.h-caption h4 { color:#382526; font-size: 16px; font-weight: bold; margin-bottom:20px; }
+.h-body { }
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 { font-family:"Open sans", Helvetica, Arial; }
+h1, .h1, h2, .h2, h3, .h3 { margin-top:5px; } 
+blockquote { font-style: italic; font-family: Georgia; color:#999; margin:30px 0 30px; }
+label { color: #777; }
+.thin { font-weight:300; }
+.-title { margin-top:20px; font-weight:300; }
+.text-muted { color:#888; }
+.breadcrumb { background:none; padding:0; margin:30px 0 0px 0; }
+ul.list-spaces li{ margin-bottom:10px; }
+
+/* Helpers */
+.container-full { margin: 0 auto; width: 100%; }
+.top-space { margin-top: 60px; }
+.top-margin { margin-top:20px; }
+
+img { max-width:100%; }
+img.pull-right { margin-left: 10px; }
+img.pull-left { margin-right: 10px; }
+#map { width:100%; height:280px; }
+#social { margin-top:50px; margin-bottom:50px; }
+#social .wrapper { width:340px; margin:0 auto; }
+
+/* Main content block */
+.maincontent { }
+
+.user-infos{
+padding:15px;
+margin-bottom: 20px;
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 4px;
+box-shadow: 0 1px 1px rgba(0,0,0,.05);
+box-sizing: border-box;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 14px;
+line-height: 1.428571429;
+color: #333;
+text-align: center;
+
+}
+
+
+/* Sidebars */
+.sidebar { padding-top:36px; padding-bottom:30px; }
+.sidebar .widget { margin-bottom:20px; }
+.sidebar h1, .sidebar .h1, .sidebar h2, .sidebar .h2, .sidebar h3, .sidebar .h3 { margin-top:20px; } 
+
+/* Footer */
+.footer1 { 
+	background: #d30151c5;
+	padding: 30px 0 0 0;
+	font-size: 12px;
+	color: rgb(255, 255, 255); 
+}
+
+.footer1 a { 
+	color: rgb(255, 255, 255); 
+}
+.footer1 a:hover {
+	color: #fff; 
+}
+
+.footer1 .widget { 
+	margin-bottom:30px; 
+}	
+
+.footer1 .widget-title { 
+	font-size: 17px; font-weight: bold;
+	color: rgb(255, 255, 255);
+	margin: 0 0 20px;
+}
+
+.footer1 .entry-meta {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin: 0 0 35px 0;
+	padding: 2px 0;
+	color: #888888;
+	font-size: 12px;
+	font-size: 0.75rem;
+}
+
+.footer1 .entry-meta a { 
+	color: #333333; 
+}
+
+.footer1 .entry-meta .meta-in {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0; 
+}
+
+.follow-me-icons { 
+	font-size:30px;
+}	
+
+.follow-me-icons i { 
+	float:left;
+	margin:0 10px 0 0;
+}		
+
+.footer2 {
+	background: #d30153;
+	padding: 15px 0;
+	color: rgb(255, 255, 255);
+	font-size: 12px;
+}
+
+.footer2 a {
+	color: rgb(255, 255, 255);
+}
+
+.footer2 a:hover {
+	color: #fff;
+}
+
+.footer2 p {
+	margin: 0;
+}
+
+.widget-simplenav {
+	margin-left:-5px;
+}	
+
+.widget-simplenav a{
+	margin:0 5px;}		

@@ -1,0 +1,45 @@
+@media screen and (min-width:1280px){ /*écran PC*/
+body {
+background-color: blueviolet;
+
+}
+
+
+
+
+
+
+
+
+}
+
+
+@media screen and (min-width:681px) and (max-width:1279px){ /*écran Tablette*/
+    body {
+        background-color: rgb(108, 133, 110);
+        
+        }
+    
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width:680px){ /*écran Smartphone*/
+    body {
+        background-color: rgb(226, 43, 43);
+        
+        }
+
+    
+
+
+
+
+
+
+}
