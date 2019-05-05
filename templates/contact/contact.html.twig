@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Contact' %}
+
+
+{% block body %}
+<div class="container top-space">
+
+    <!-- Article main content -->
+    <article class="col-sm-9 maincontent">
+        <div class="container top-space">
+            <ol class="breadcrumb">
+            <li>
+                <a href="{{ path ('home')}}">Accueil</a>
+            </li>
+            <li class="active">
+                Contact
+            </li>
+            </ol>
+        </div>
+        <header class="page-header">
+        <h1 class="page-title">Contactez-nous</h1>
+        </header>
+
+        <p>
+        J'envoie un message à  un conseiller
+        </p>
+        <br>
+        {{ form_start(form) }}
+        <div class="form">
+        <div class="col">{{ form_row(form.nom) }}</div>
+        <div class="col">{{ form_row(form.telephone) }}</div>
+        <div class="col">{{ form_row(form.email) }}</div>
+        </div>
+        {{ form_rest(form) }}
+        <div class="form-group">
+        <button class="btn btn-primary">Envoyer</button>
+        </div>
+        {{ form_end(form) }}
+    </article>
+    <!-- /Article -->
+</div>
+
+
+{% endblock %}
+

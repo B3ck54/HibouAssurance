@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Accueil' %}
+
+{% block body %}
+
+    <!-- Header -->
+    <div class="container.jumbotron top">
+            <!-- Header -->
+            <header id="head">
+                    <div class="row align-items-center" >
+
+                        <div class="col">
+                            <h1 class="lead">ASSURANCE AUTO</h1>
+                            <p class="slogan">Assurez-vous chez le Hibou !</p>
+
+                            <img id="voiture" src="{{ asset('assets/images/voiture_vecto.png') }}" alt="picto voiture">
+                            <p> <a class="btn btn-action btn-lg" role="button" href ="{{ path('coordonnee') }}">Je calcule mon devis</a></p>
+                        </div>
+                    </div>
+            </header>
+            <!-- /Header -->
+
+            <!-- Intro -->
+            <div class="container text-center">
+                <br> <br>
+                <h2 class="thin">Qui sommes-nous ?</h2>
+                <p class="text-muted">
+                    Le Hibou dolor sit amet, consectetur adipiscing elit.
+                    Vivamus fermentum neque et dui tempor pretium. Vivamus vitae ornare orci. Ut tincidunt odio lacus,
+                    eget efficitur lectus imperdiet et. Aliquam laoreet placerat massa, eget pellentesque leo feugiat sed.
+                    Mauris vel dui non massa pretium pharetra in id tellus. In finibus, velit ut sagittis sollicitudin,
+                    nisl dolor tincidunt justo, ut mattis velit tellus in enim. Donec id consectetur neque.
+                    Nulla eleifend luctus elit eu interdum. Nam faucibus nisl non libero pretium, eu aliquet massa rhoncus.
+                    In pretium neque eros, sed elementum urna mattis in. Sed sollicitudin euismod metus at dapibus. In hac
+                    habitasse platea dictumst. Phasellus magna neque, laoreet nec justo id, volutpat euismod nulla.
+                    Suspendisse sed tortor nec nunc aliquam tincidunt. Aliquam congue tempus massa vel tempus.
+                    </br>
+                    Mauris nisi ligula, consequat sed faucibus eget, commodo congue magna.
+                </p>
+            </div>
+            <!-- /Intro-->
+
+            <!-- Highlights - jumbotron -->
+            <div class="jumbotron top-space">
+                <div class="container">
+
+                    <h3 class="text-center thin">Pourquoi assurer votre voiture </br> avec le Hibou Assurance ?</h3>
+
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 highlight">
+                            <div class="h-caption"><h4><i class="fa fa-cogs fa-5"></i>Des garanties pour assurer votre automobile</h4></div>
+                            <div class="h-body text-center">
+                                <p>Assurer son véhicule est à la fois essentiel et obligatoire. Les accidents n’arrivent pas toujours qu’aux autres.
+                                    Alors, victime ou responsable, l’assurance auto vous permet de circuler en toute tranquillité, dès le premier kilomètre parcouru.
+                                    Du Tiers Simple au Tous Risques Maxi, le Hibou Assurance vous propose le choix parmi plusieurs formules de garanties
+                                    pour assurer votre automobile.
+                                    En ligne ou par téléphone, nos conseillers vous conseillent en quelques minutes seulement pour assurer votre véhicule
+                                    à moindre frais.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 highlight">
+                            <div class="h-caption"><h4><i class="fa fa-flash fa-5"></i>Fat-free</h4></div>
+                            <div class="h-body text-center">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, commodi, sequi quis ad fugit omnis cumque a libero error nesciunt molestiae repellat quos perferendis numquam quibusdam rerum repellendus laboriosam reprehenderit! </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 highlight">
+                            <div class="h-caption"><h4><i class="fa fa-heart fa-5"></i>Creative Commons</h4></div>
+                            <div class="h-body text-center">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, vitae, perferendis, perspiciatis nobis voluptate quod illum soluta minima ipsam ratione quia numquam eveniet eum reprehenderit dolorem dicta nesciunt corporis?</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 highlight">
+                            <div class="h-caption"><h4><i class="fa fa-smile-o fa-5"></i>Author's support</h4></div>
+                            <div class="h-body text-center">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, excepturi, maiores, dolorem quasi reprehenderit illo accusamus nulla minima repudiandae quas ducimus reiciendis odio sequi atque temporibus facere corporis eos expedita? </p>
+                            </div>
+                    </div> <!-- /row  -->
+                </div>
+                </div>
+            </div>
+            <!-- /Highlights -->
+{% endblock %}

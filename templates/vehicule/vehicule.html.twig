@@ -1,0 +1,123 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Véhicules' %}
+
+
+{% block body %}
+    <div class="container top-space">
+        <!-- container -->
+        <div class="container top-space">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="{{ path ('home')}}">Accueil</a>
+                </li>
+                <li class="active">
+                    Véhicule
+                </li>
+            </ol>
+        </div>
+
+        <div class="col-md-4">
+            <h2>Spécificités</h2>
+            <ul class="list-group">
+                {% for option in Coordonnee.informations %}
+                    <li class="list-group-item">{{ information.nom }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+
+
+            <!-- Progressbar -->
+            <div class="progress">
+                <div class="circle done">
+                    <span class="label">1</span>
+                </div>
+
+                <span class="bar done"></span>
+                <div class="circle active">
+                    <span class="label">2</span>
+                </div>
+
+                <span class="bar"></span>
+                <div class="circle ">
+                    <span class="label">3</span>
+                </div>
+
+                <span class="bar"></span>
+                <div class="circle">
+                    <span class="label">4</span>
+                </div>
+            </div>
+            <!-- /Progressbar -->
+
+        <!-- Article main content -->
+        <article class="col-xs-12 maincontent">
+
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3 class="thin text-center">Véhicule</h3>
+
+                        <hr>
+                        {{ form_start(form) }}
+                        <div class="top-margin">
+                            <div class="form-check form-check-inline"> Marque :
+                                <span class="text-danger">*{{ form_widget(form.marque) }}</span>
+                            </div>
+                        </div>
+
+                        <div class="top-margin">
+                            <div class="form-check form-check-inline"> Modèle :
+                                <span class="text-danger">*{{ form_widget(form.modele) }}</span>
+                            </div>
+                        </div>
+
+                        <div class="top-margin">
+                            <div class="form-check form-check-inline">Date de mise en circulation :
+                                <span class="text-danger">*{{ form_widget(form.dateCirculation) }}</span>
+                            </div>
+                        </div>
+
+                        <div class="top-margin">
+                            <div class="form-check form-check-inline"> Motorisation :
+                                <span class="text-danger">*{{ form_widget(form.motorisation) }}</span>
+                            </div>
+                        </div>
+
+                        <div class="top-margin">
+                            <div class="form-check form-check-inline"> Marque :
+                                <span class="text-danger">*{{ form_widget(form.marque) }}</span>
+                            </div>
+                        </div>
+
+                        <div class="top-margin">
+                            <div class="form-check form-check-inline"> Garage :
+                                <span class="text-danger">*{{ form_widget(form.garage) }}</span>
+                            </div>
+                        </div>
+
+                        <input class="slider" type="range" min="50" max="350" value="100" id="myRange"/> Bonus / Malus
+                        <span id="g-range-value">* {{ form_widget(form.bonusMalus) }}</span>
+
+
+                        {{ form_end(form) }}
+
+                        <div class="row">
+                            <div class="col-lg-12 text-right">
+                                <a class="btn btn-action" type="Submit" href="{{ path('vehicule') }}">Suivant</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- /Article -->
+
+    </div>
+    </div>
+    </div>	<!-- /container -->
+
+
+{% endblock %}
+
